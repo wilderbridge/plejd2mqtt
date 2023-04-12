@@ -105,6 +105,7 @@ class PlejdService extends EventEmitter {
 
     if (!this.adapter) {
       console.log('plejd-ble: error: unable to find a bluetooth adapter that is compatible.');
+      process.exit(1);
       return;
     }
 
